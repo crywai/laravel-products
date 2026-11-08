@@ -21,6 +21,7 @@
         <h1>Каталог игровой периферии</h1>
         <p><a href="{{ route('array.shuffle') }}">Перемешать массив</a></p>
         <p><a href="{{ route('array.sort') }}">Сортировать массив (по цене по возрастанию)</a></p>
+        <p><a href="{{ route('array.filter') }}">Отфильтровать массив (цена больше 1000)</a></p>
         <div class="products">
             @foreach ($array as $item)
                 <div class="product">

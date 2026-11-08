@@ -44,4 +44,13 @@ class MainController extends Controller
 
         return view('array', compact('array'));
     }
+
+    public function filterArray()
+    {
+        $array = array_filter($this->array, function ($item) {
+            return $item['price'] > 1000;
+        });
+
+        return view('array', compact('array'));
+    }
 }
