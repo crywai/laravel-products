@@ -26,4 +26,12 @@ class MainController extends Controller
 
         return view('array', compact('array'));
     }
+
+    public function shuffleArray()
+    {
+        $array = $this->array;
+        shuffle($array);
+
+        return view('array', compact('array'));
+    }
 }

@@ -19,6 +19,7 @@
 
     <main class="container">
         <h1>Каталог игровой периферии</h1>
+        <p><a href="{{ route('array.shuffle') }}">Перемешать массив</a></p>
         <div class="products">
             @foreach ($array as $item)
                 <div class="product">
