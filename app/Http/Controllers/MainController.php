@@ -34,4 +34,14 @@ class MainController extends Controller
 
         return view('array', compact('array'));
     }
+
+    public function sortArray()
+    {
+        $array = $this->array;
+        usort($array, function ($a, $b) {
+            return $a['price'] <=> $b['price'];
+        });
+
+        return view('array', compact('array'));
+    }
 }
